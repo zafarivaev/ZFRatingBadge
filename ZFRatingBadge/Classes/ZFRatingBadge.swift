@@ -69,7 +69,7 @@ open class ZFRatingBadge: UIView {
     }
     
     // MARK: - Initialization
-    init(backgroundColor: UIColor = .orange,
+    public init(backgroundColor: UIColor = .orange,
          starImage: UIImage = UIImage(named: "Star")!,
          rating: Double = 0.0,
          font: UIFont = UIFont(name: "HelveticaNeue", size: 16)!,
