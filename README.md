@@ -13,11 +13,6 @@
 pod 'ZFRatingBadge', '1.0.0'
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 ## License
 
 ZFRatingBadge is released under the MIT license. [See LICENSE](https://github.com/zafarivaev/ZFRatingBadge/blob/master/LICENSE) for details.
