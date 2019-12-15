@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C01524323A601D00005369A /* ZFRatingBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C01524223A601D00005369A /* ZFRatingBadge.swift */; };
+		1C01524623A6023F0005369A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C01524523A6023F0005369A /* Images.xcassets */; };
 		1C4C505123A6008B00390505 /* ZFRatingBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4C504F23A6008B00390505 /* ZFRatingBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F5E7A6DF4873D69391DB90 /* Pods_ZFRatingBadge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEF95614CC183737281EBD8 /* Pods_ZFRatingBadge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C01524223A601D00005369A /* ZFRatingBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFRatingBadge.swift; sourceTree = "<group>"; };
+		1C01524523A6023F0005369A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1C4C504C23A6008B00390505 /* ZFRatingBadge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZFRatingBadge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4C504F23A6008B00390505 /* ZFRatingBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFRatingBadge.h; sourceTree = "<group>"; };
 		1C4C505023A6008B00390505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C97259013AA288AE795AFB5 /* Pods-ZFRatingBadge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFRatingBadge.release.xcconfig"; path = "Target Support Files/Pods-ZFRatingBadge/Pods-ZFRatingBadge.release.xcconfig"; sourceTree = "<group>"; };
+		494F8EDF75866D285B42632C /* Pods-ZFRatingBadge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFRatingBadge.debug.xcconfig"; path = "Target Support Files/Pods-ZFRatingBadge/Pods-ZFRatingBadge.debug.xcconfig"; sourceTree = "<group>"; };
+		ACEF95614CC183737281EBD8 /* Pods_ZFRatingBadge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZFRatingBadge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +29,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F5E7A6DF4873D69391DB90 /* Pods_ZFRatingBadge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C01524123A601C30005369A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1C01524223A601D00005369A /* ZFRatingBadge.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1C01524423A602230005369A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C01524523A6023F0005369A /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1C4C504223A6008B00390505 = {
 			isa = PBXGroup;
 			children = (
 				1C4C504E23A6008B00390505 /* ZFRatingBadge */,
 				1C4C504D23A6008B00390505 /* Products */,
+				FAEF0D5E6CDE3BAEC37969A5 /* Pods */,
+				1D14E44C6E2E73F915EF45DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +73,29 @@
 		1C4C504E23A6008B00390505 /* ZFRatingBadge */ = {
 			isa = PBXGroup;
 			children = (
+				1C01524423A602230005369A /* Resources */,
+				1C01524123A601C30005369A /* Classes */,
 				1C4C504F23A6008B00390505 /* ZFRatingBadge.h */,
 				1C4C505023A6008B00390505 /* Info.plist */,
 			);
 			path = ZFRatingBadge;
+			sourceTree = "<group>";
+		};
+		1D14E44C6E2E73F915EF45DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF95614CC183737281EBD8 /* Pods_ZFRatingBadge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAEF0D5E6CDE3BAEC37969A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				494F8EDF75866D285B42632C /* Pods-ZFRatingBadge.debug.xcconfig */,
+				1C97259013AA288AE795AFB5 /* Pods-ZFRatingBadge.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C4C505423A6008B00390505 /* Build configuration list for PBXNativeTarget "ZFRatingBadge" */;
 			buildPhases = (
+				5DC7635CFBF180F58F65C3AA /* [CP] Check Pods Manifest.lock */,
 				1C4C504723A6008B00390505 /* Headers */,
 				1C4C504823A6008B00390505 /* Sources */,
 				1C4C504923A6008B00390505 /* Frameworks */,
@@ -95,6 +142,7 @@
 				TargetAttributes = {
 					1C4C504B23A6008B00390505 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -121,16 +169,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C01524623A6023F0005369A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DC7635CFBF180F58F65C3AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZFRatingBadge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C4C504823A6008B00390505 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C01524323A601D00005369A /* ZFRatingBadge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +334,9 @@
 		};
 		1C4C505523A6008B00390505 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494F8EDF75866D285B42632C /* Pods-ZFRatingBadge.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
@@ -276,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zafar.ZFRatingBadge;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,7 +361,9 @@
 		};
 		1C4C505623A6008B00390505 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C97259013AA288AE795AFB5 /* Pods-ZFRatingBadge.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
