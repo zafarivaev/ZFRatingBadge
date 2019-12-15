@@ -1,7 +1,7 @@
 import UIKit
 import SnapKit
 
-open class ZFRatingView: UIView {
+open class ZFRatingBadge: UIView {
     
     override public var backgroundColor: UIColor? {
         willSet(color) {
