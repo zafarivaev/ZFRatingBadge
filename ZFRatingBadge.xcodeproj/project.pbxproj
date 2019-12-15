@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C01524323A601D00005369A /* ZFRatingBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C01524223A601D00005369A /* ZFRatingBadge.swift */; };
 		1C01524623A6023F0005369A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C01524523A6023F0005369A /* Images.xcassets */; };
+		1C01524823A60EA00005369A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C01524723A60EA00005369A /* README.md */; };
 		1C4C505123A6008B00390505 /* ZFRatingBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4C504F23A6008B00390505 /* ZFRatingBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8F5E7A6DF4873D69391DB90 /* Pods_ZFRatingBadge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEF95614CC183737281EBD8 /* Pods_ZFRatingBadge.framework */; };
 /* End PBXBuildFile section */
@@ -16,6 +17,7 @@
 /* Begin PBXFileReference section */
 		1C01524223A601D00005369A /* ZFRatingBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFRatingBadge.swift; sourceTree = "<group>"; };
 		1C01524523A6023F0005369A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1C01524723A60EA00005369A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1C4C504C23A6008B00390505 /* ZFRatingBadge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZFRatingBadge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4C504F23A6008B00390505 /* ZFRatingBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFRatingBadge.h; sourceTree = "<group>"; };
 		1C4C505023A6008B00390505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		1C4C504223A6008B00390505 = {
 			isa = PBXGroup;
 			children = (
+				1C01524723A60EA00005369A /* README.md */,
 				1C4C504E23A6008B00390505 /* ZFRatingBadge */,
 				1C4C504D23A6008B00390505 /* Products */,
 				FAEF0D5E6CDE3BAEC37969A5 /* Pods */,
@@ -169,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C01524823A60EA00005369A /* README.md in Resources */,
 				1C01524623A6023F0005369A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
