@@ -28,7 +28,7 @@ Creates a Badge with default properties:
 // shadowRadius: CGFloat = 0,
 // shadowColor: CGColor = UIColor.clear.cgColor,
 // shadowOpacity: Float = 0,
-// shadowOffset: CGSize = .zero)
+// shadowOffset: CGSize = .zero
 
 let ratingBadge = ZFRatingBadge()
 ```
