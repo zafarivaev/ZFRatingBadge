@@ -15,25 +15,28 @@ pod 'ZFRatingBadge', '1.0.0'
 
 ## How To
 
-Create a badge:
+### Create a badge
 
 ```swift
-// Creates a badge with the following default properties:
-// shadowRadius: CGFloat = 5
-// shadowColor: CGColor = UIColor.darkGray.cgColor
-// shadowOpacity: Float = 0.5
-// shadowOffset: CGSize = CGSize(width: -1, height: 1)
+// backgroundColor: UIColor = .orange,
+// starImage: UIImage = UIImage(named: "Star")!,
+// rating: Double = 0.0,
+// font: UIFont = UIFont(name: "HelveticaNeue", size: 16)!,
+// textColor: UIColor = .white,
+// shadowRadius: CGFloat = 0,
+// shadowColor: CGColor = UIColor.clear.cgColor,
+// shadowOpacity: Float = 0,
+// shadowOffset: CGSize = .zero)
 
-let badge = ZFRatingBadge()
+let ratingBadge = ZFRatingBadge()
 ```
 
 Or:
 
 ```swift
-
 // Specify your own backgroundColor, starImage, rating, font, textColor, shadowRadius, shadowColor, shadowOpacity, and shadowOffset.
 
-let badge = ZFRatingBadge(backgroundColor: UIColor, starImage: UIImage, rating: Double, font: UIFont, textColor: UIColor, shadowRadius: CGFloat, shadowColor: CGColor, shadowOpacity: Float, shadowOffset: CGSize)
+let ratingBadge = ZFRatingBadge(backgroundColor: UIColor, starImage: UIImage, rating: Double, font: UIFont, textColor: UIColor, shadowRadius: CGFloat, shadowColor: CGColor, shadowOpacity: Float, shadowOffset: CGSize)
 ```
 
 Available Properties:
@@ -92,6 +95,29 @@ Available Properties:
             self.layer.shadowOffset = shadowOffset
         }
     }
+```
+
+### Helper methods
+
+Add shadow to the badge:
+
+```swift
+
+// Adds shadow with the following default properties: 
+// shadowRadius: CGFloat = 5
+// shadowColor: CGColor = UIColor.darkGray.cgColor
+// shadowOpacity: Float = 0.5
+// shadowOffset: CGSize = CGSize(width: -1, height: 1)
+
+ratingBadge.addShadow()
+```
+
+Or:
+
+```swift
+// Specify your own shadowRadius, shadowColor, shadowOpacity, shadowOffset
+
+ratingBadge.addShadow(shadowRadius: 5, shadowColor: DARK_GRAY.cgColor, shadowOpacity: 0.25, shadowOffset: CGSize(width: 0, height: 2))
 ```
 
 ## License
