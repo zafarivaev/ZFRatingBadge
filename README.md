@@ -17,6 +17,8 @@ pod 'ZFRatingBadge', '1.0.0'
 
 ### Create a badge
 
+Creates a Badge with default properties:
+
 ```swift
 // backgroundColor: UIColor = .orange,
 // starImage: UIImage = UIImage(named: "Star")!,
@@ -31,11 +33,9 @@ pod 'ZFRatingBadge', '1.0.0'
 let ratingBadge = ZFRatingBadge()
 ```
 
-Or:
+Or specify your own backgroundColor, starImage, rating, font, textColor, shadowRadius, shadowColor, shadowOpacity, and shadowOffset:
 
 ```swift
-// Specify your own backgroundColor, starImage, rating, font, textColor, shadowRadius, shadowColor, shadowOpacity, and shadowOffset.
-
 let ratingBadge = ZFRatingBadge(backgroundColor: UIColor, starImage: UIImage, rating: Double, font: UIFont, textColor: UIColor, shadowRadius: CGFloat, shadowColor: CGColor, shadowOpacity: Float, shadowOffset: CGSize)
 ```
 
@@ -99,11 +99,9 @@ Available Properties:
 
 ### Helper methods
 
-Add shadow to the badge:
+Add shadow to the badge with default properties:
 
 ```swift
-
-// Adds shadow with the following default properties: 
 // shadowRadius: CGFloat = 5
 // shadowColor: CGColor = UIColor.darkGray.cgColor
 // shadowOpacity: Float = 0.5
@@ -112,11 +110,9 @@ Add shadow to the badge:
 ratingBadge.addShadow()
 ```
 
-Or:
+Or specify your own shadowRadius, shadowColor, shadowOpacity, shadowOffset:
 
 ```swift
-// Specify your own shadowRadius, shadowColor, shadowOpacity, shadowOffset
-
 ratingBadge.addShadow(shadowRadius: 5, shadowColor: DARK_GRAY.cgColor, shadowOpacity: 0.25, shadowOffset: CGSize(width: 0, height: 2))
 ```
 
